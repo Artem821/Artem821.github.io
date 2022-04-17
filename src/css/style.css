@@ -347,7 +347,7 @@ margin-top: 50px;
     float:left;
     text-align: left;
     margin-top: 10px;
-   border: 1px solid #000;   
+      border: 2px solid #000;
      color: #ffffff;
 width: 300px;
 }
@@ -358,7 +358,7 @@ width: 300px;
     float:left;
     text-align:left;
     margin-top: 10px;
-    border: 1px solid #000;
+    border: 2px solid #000;
      color: #ffffff;
 
 }
@@ -369,7 +369,7 @@ width: 300px;
     float:left;
     text-align: left;
     margin-top: 20px;
-
+border: 2px solid #000;
   background-color: #d8dce2;
     
 }
