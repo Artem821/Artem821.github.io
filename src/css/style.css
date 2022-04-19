@@ -1,3 +1,40 @@
+/*Загрузочный экран/
+preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #d17700;
+    z-index: 1001;
+}
+.prelodeader_row{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+/*Начала сайта/
 body{
     font-family: Arial, sans-serif;
 }
@@ -6,7 +43,7 @@ body{
     width: 100%;
     height: 60px;
     background: #344051;
-    
+    position: fixed;
 }
 
 .logo1{
@@ -16,13 +53,37 @@ body{
     padding-left: 100px;
  font-weight: bold;
     float: left;
+    animation: comming 2s ease;
+    opacity: 0;
 }
+
+
 
 .menu{
     float: left;
     padding-left: 432px;
 }
 
+
+.menu li a{
+    transition: all 0.2s;
+    color: white;
+    display: inline-block;
+    transform: scale(1);
+
+}
+
+.menu li a:visited{
+    color: white;  
+}
+.menu li a:hover{
+    color: #fe9102;
+ 
+}
+.menu li a:active{
+    color: #fe9102;
+    transform: scale(1.1);
+}
 .menu li{
     float: left;
     line-height: 60px;
@@ -30,18 +91,41 @@ body{
 margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    animation: menu 0.4s ease forwards;
+    opacity: 0;
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/bg.png) center/cover no-repeat;
 }
 
-.main{
-    width: 100%;
-    height: calc(100% - 60px);
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/bg.png) center/cover no-repeat;   
-}
+
 .title__conteiner{
     float: left;
-    margin: 216px 0px 0px 202px;
+    margin: 300px 0px 0px 202px;
     color: #2c384a;
     text-align: center;
+    animation: logo1 1s ease forwards;
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
 }
 .title__conteiner h1{
     font-size: 60px;
@@ -63,7 +147,17 @@ margin-right: 40px;
     padding: 0px 16px;
     margin: 29px 28px 0px 14px;
 }
-
+.title__conteiner input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+.title__conteiner input:hover{
+    background: #344051;
+    color: white;
+}
+.title__conteiner input:active{
+    transform:scale(1.1);
+}
 .logo2{
    font-size: 25px; 
     text-align: center;
@@ -156,15 +250,19 @@ border-radius: 8px;
     font-weight: bold;
 }
 .visit{
-    color: #fff;
+text-decoration-color: #fff;
     border-radius: 8px;
     width: 130px;
     height: 30px;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-right: 200px;
    border: 1px solid #000;
     text-align: center;
     background-color: #00b6af;
+    padding-top: 8px;
+}
+.visit a:visited{
+    color: white;
 }
 .logo5{
     
@@ -350,17 +448,17 @@ font-size: 15px;
   line-height: 50px;
 margin-top: 50px;
     font-weight: bold;
-       color: #fff;
-    
+       color: #fff;  
 }
+
 .sms1{
-    margin-left: 450px;
+    margin-left: 435px;
+
    height: 30px;
     float:left;
     text-align: left;
     margin-top: 10px;
       border: 2px solid #000;
-     color: #ffffff;
 width: 300px;
 }
 .sms2{
@@ -371,23 +469,21 @@ width: 300px;
     text-align:left;
     margin-top: 10px;
     border: 2px solid #000;
-     color: #ffffff;
-
 }
+
 .sms3{
-    
-    margin-left: 450px;
+    margin-left: 435px;
     width: 650px;
     float:left;
     text-align: left;
-    margin-top: 20px;
-border: 2px solid #000;
+    margin-top: 30px;
+ border: 2px solid #000;
   background-color: #d8dce2;
     
 }
 .sms4{
     height: 30px;
-    margin-left: 750px;
+    margin-left: 700px;
     width: 100px;
     float:left;
     text-align: center;
