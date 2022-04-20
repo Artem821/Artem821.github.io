@@ -2,28 +2,39 @@
 
 
 @keyframes comming{
-    from(
-    opacity: 0;)
-    to( opasiti: 1;
-    )
+    from{
+        opacity: 0;}
+    to {
+        opacity: 1;
+    }
 }
 @keyframes menu{
- from(
+    from{
     opacity: 0;
     margin-top: -89px;
-    )
-    to(
+    }
+    to{
     opacity: 1;
     margin-top: 0px;
-    )
+}
 }
 @keyframes logo1{
- from(
+    from{
     opacity: 0;
     margin-left: -500px;
-    )
-    to(
+    }
+    to{
     opacity: 1;
-    margin-left: 0px;
-    )
+    margin-left: 202px;
+    }
+}
+
+}
+.fon{
+    animation: translate3d(0px,0px,0px);
+    background-color: #000;
+    transition: all 1.5s ease 2s;
+}
+.fon:hover{
+    transform: translate3d(50px, 50px,100px);
 }
