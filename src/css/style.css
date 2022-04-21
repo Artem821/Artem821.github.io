@@ -145,29 +145,36 @@ main{
     color: #38475a;
 }
 .photo2{
-padding: 5px 15px 15px 15px;
+padding: 2.5px 15px 15px 19px;
     color: # 9a9ba3;
    border: 2px solid #6f707e;
     width: 150px;
     height: 30px;
 margin-left: 380px;
 border-radius: 8px;
-    
+
     margin-top: 15px;
     display: inline-block;
-     transition: all 1s;
-    
+     transition: all 1s; 
+}
+.photo2 input{
+    outline: none;
+background: transparent;
 }
 .photo2:hover{  
 
             background: #1a148c;
 }
-.photo2 a:hover{
+.photo2 input:hover{
     color: #fff;
     
 }
-photo2 a:active{
-    transform: scale(1.1);
+.photo2{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.photo2:active{
+    transform:scale(1.1);
 }
 .rez{
      text-decoration: none;
@@ -197,6 +204,19 @@ photo2 a:active{
 .noyt p{
     line-height: 25px;
 }
+.noyt{
+        outline: none;
+background: transparent;
+}
+.noyt:{
+      transition: all 0.2s;
+    transform: scale(1);
+    
+}
+.noyt:hover{
+      transition: all 0.2s;
+    transform: scale(1.1); 
+}
 
     
 .fon{
@@ -205,6 +225,7 @@ photo2 a:active{
 
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;   
 }
+
 
 
 .logo4{
@@ -232,7 +253,7 @@ photo2 a:active{
     font-weight: bold;
 }
 .visit{
-text-decoration-color: #fff;
+outline: none;
     border-radius: 8px;
     width: 130px;
     height: 30px;
@@ -241,10 +262,31 @@ text-decoration-color: #fff;
    border: 1px solid #000;
     text-align: center;
     background-color: #00b6af;
-    padding-top: 8px;
+    padding-top: 7px;
+ transition: all 1s; 
 }
-.visit a:visited{
+.visit input{
+    outline: none;
+background: transparent;
+}
+.visit:hover{  
+
+            background: #1a148c;
+}
+.visit:hover{
+    color: #fff;
+    
+}
+.visit {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.visit:active{
+    transform:scale(1.1);
+}
+.visit input{
     color: white;
+    background-color: transparent;
 }
 .logo5{
     
@@ -353,10 +395,41 @@ width: 300px;
     color: #070400;
     margin-top: 15px;
 }
+.statistika{
+      transition: all 0.2s;
+    transform: scale(1);
+    
+}
+.statistika:hover{
+      transition: all 0.2s;
+    transform: scale(1.1); 
+}
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
 .fon1{
     margin-top: 50px;
-    height: 400px;
-
+    height: 100%;
+width: 100%;
     background: url(../img/%D1%84%D0%BE%D0%BD%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0.png) center/cover no-repeat; 
 }
 .logo8{
@@ -464,16 +537,43 @@ width: 300px;
     
 }
 .sms4{
-    border: 2px solid #fff;
+   
     position: relative;
     top: 255px;
-    right: 525px;
-    padding: 5px 15px 5px 15px;
-    text-align: center;
-    border-radius: 5px;
+    right: 375px;
+    padding: 10px 15px 5px 150px;
+    margin: 0px 50px 0px 150px;
+    width: 100px;
+    
 }
-.div a{
+.sms4 input{
     color: white;
+     border: 3px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+  outline: none; 
+ width: 115px;
+  background: transparent;
+transition: all 1s; 
+}
+.sms4 input{
+    outline: none;
+background: transparent;
+}
+.sms4 input:hover{  
+
+            background: #fff;
+}
+.sms4 input:hover{
+    color: #000;
+    
+}
+.sms4{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.sms4:active{
+    transform: scale(1.1);
 }
  
 .seti{
