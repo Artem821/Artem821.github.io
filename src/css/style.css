@@ -30,7 +30,7 @@ body{
 
 }
 nav{
-    z-index: 1001px;    
+    z-index: 1001;    
 }
 
 .menu li a{
@@ -413,10 +413,13 @@ width: 300px;
 }
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  height: 50vh;
   overflow-x: hidden;
   overflow-y: auto;
+background: url(../img/%D1%84%D0%BE%D0%BD%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0.png) center/cover no-repeat; 
+    
 }
+
 
 .parallax__layer {
   position: absolute;
@@ -437,8 +440,8 @@ width: 300px;
     margin-top: 50px;
     height: 100%;
 width: 100%;
-    background: url(../img/%D1%84%D0%BE%D0%BD%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0.png) center/cover no-repeat; 
 }
+    
 .logo8{
      font-size: 25px; 
     text-align: center;
@@ -475,14 +478,28 @@ width: 100%;
 
     text-align: right;
 }
+.text4{
+width: 200px;
+    color: #fff;
+   border: 2px solid #fff;
+    text-align: center;
+    margin-left: 440px;
+}
+
+.text5{
+width: 500px;
+}
 .sv2{
     width: 350px;
     float:left;
     text-align: left;
     margin-top: 50px;
   padding-left: 200px;
+}
 
-
+.text5{
+  border: 2px solid #fff;
+    color: #fff;
 }
 .sv3{
     width: 250px;
@@ -490,18 +507,24 @@ width: 100%;
     text-align: center;
     margin-top: 50px;
  
-    margin-right: 300px;
+     border: 2px solid #fff;
     text-align:center;}
+.text6{
+      
+    color: #fff;
+
+    text-align: center;
+    
+}
 .text3{
     text-align: center;
       margin-top: 15px;
     color: #fff;
 }
 
-.text4{
-      margin-top: 15px;
-    color: #fff;
-}
+
+
+
 .sms{
     margin-left: 600px;
     margin-right: 600px;
